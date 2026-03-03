@@ -5,7 +5,6 @@ import io.restassured.response.Response;
 import org.br.com.test.model.serpro.ConsultaSerproResponse;
 
 
-
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,7 +22,6 @@ public class SerproController {
                 .contentType(ContentType.JSON)
                 .when()
                 .get(BASE_URL + "/" + cnpj);
-        response.prettyPrint();
     }
 
     public void validarStatusCode(int expectedStatusCode) {
@@ -33,11 +31,10 @@ public class SerproController {
         );
     }
 
-    public void getEmail() {
+    public String getEmail() {
         ConsultaSerproResponse resp = this.response.as(ConsultaSerproResponse.class);
-        System.out.println(resp.getEmail());
-        System.out.println(resp.getTelefones().getFirst().getNumero());
 
+        return resp.getEmail();
     }
 
 }

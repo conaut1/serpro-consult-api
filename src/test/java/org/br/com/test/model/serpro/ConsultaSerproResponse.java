@@ -35,23 +35,14 @@ public class ConsultaSerproResponse {
     private List<String> cnaesSecundarios;
     @JsonProperty("natureza_juridica")
     private String naturezaJuridica;
-    @JsonProperty("logradouro")
     private String logradouro;
-    @JsonProperty("numero")
     private String numero;
-    @JsonProperty("complemento")
     private String complemento;
-    @JsonProperty("bairro")
     private String bairro;
-    @JsonProperty("cep")
     private String cep;
-    @JsonProperty("uf")
     private String uf;
-    @JsonProperty("municipio")
     private String municipio;
-    @JsonProperty("email")
     private String email;
-    @JsonProperty("telefones")
     private List<Telefone> telefones;
     @JsonProperty("capital_social")
     private String capitalSocial;
