@@ -22,6 +22,7 @@ public class SerproController {
                 .contentType(ContentType.JSON)
                 .when()
                 .get(BASE_URL + "/" + cnpj);
+        response.prettyPrint();
     }
 
     public void validarStatusCode(int expectedStatusCode) {
