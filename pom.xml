@@ -62,6 +62,13 @@
             <version>3.2.5</version>
         </dependency>
 
+        <!-- Spring Boot Actuator - Health Check -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>3.2.5</version>
+        </dependency>
+
         <!-- SpringDoc OpenAPI - Swagger UI -->
         <dependency>
             <groupId>org.springdoc</groupId>
